@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import Header from '../header/Header'
+import Header from '../Header'
 import Footer from '../layout/Footer'
 import MeetupMap from '../meetup-map/MeetupMap'
 import Container from 'react-bootstrap/Container'
