@@ -1,19 +1,27 @@
-import React, { Fragment } from 'react';
-
-import Footer from '../layout/Footer';
+import React, { Fragment } from 'react'
+import Header from '../header/Header'
+import Footer from '../layout/Footer'
+import MeetupMap from '../meetup-map/MeetupMap'
+import Container from 'react-bootstrap/Container'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
 
 const Meetups = () => {
-    return (
-        <Fragment>
-            <div className='p-5 m-5 text-center'>
-                <h1 className='p-5 m-5'>Meetups</h1>
-            </div>
-            <div className='p-5 m-5 text-center'>
-                <h1 className='p-5 m-5'>Meetups</h1>
-            </div>
-            <Footer />
-        </Fragment>
-    );
-};
+	return (
+		<Fragment>
+			<Header></Header>
+			<Container>
+				<Row>
+					<h1 className="p-5 m-5">Meetups</h1>
+					<div className="p-5 m-5 text-center">
+						<MeetupMap></MeetupMap>
+					</div>
+				</Row>
+			</Container>
 
-export default Meetups;
+			<Footer />
+		</Fragment>
+	)
+}
+
+export default Meetups

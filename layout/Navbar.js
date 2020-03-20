@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button'
 const NavBar = () => {
 	return (
 		<Fragment>
-			<Navbar bg="light" variant="light" expand="lg">
+			<Navbar bg="light" variant="light" expand="md">
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Container>
@@ -32,14 +32,14 @@ const NavBar = () => {
                                 Resources
                             </Link> */}
 						</Nav>
-						<Form inline>
+						{/* <Form inline>
 							<FormControl
 								type="text"
 								placeholder="Search"
 								className="mr-sm-2"
 							/>
 							<Button variant="outline-primary">Search</Button>
-						</Form>
+						</Form> */}
 					</Container>
 				</Navbar.Collapse>
 			</Navbar>
